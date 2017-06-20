@@ -9,7 +9,7 @@
 #ifndef TokenStream_hpp
 #define TokenStream_hpp
 
-#include <string>
+
 #include "Token.hpp"
 
 class TokenStream {

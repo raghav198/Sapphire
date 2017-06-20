@@ -9,6 +9,9 @@
 #ifndef Token_hpp
 #define Token_hpp
 
+#include <vector>
+#include <string>
+
 enum TokenType {
     NUMBER,
     PLUS,
@@ -20,11 +23,17 @@ enum TokenType {
     _EOF
 };
 
+
 struct Token {
     TokenType type = TokenType::_EOF;
     float value;
 };
 
+extern std::string names[7];
+extern std::vector<TokenType> plusOrMinus;
+extern std::vector<TokenType> mulOrDiv;
+
 Token makeNum(float);
 Token makeOperator(char);
+Token makeBlank();
 #endif /* Token_hpp */

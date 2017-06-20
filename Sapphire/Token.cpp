@@ -7,7 +7,7 @@
 //
 
 #include "Token.hpp"
-#include<stdlib.h>
+#include <stdlib.h>
 
 Token makeNum(float value) {
     Token c;
@@ -43,3 +43,23 @@ Token makeOperator(char op) {
     
     return c;
 }
+
+Token makeBlank() {
+    Token c;
+    c.type = _EOF;
+    return c;
+}
+
+std::string names[7] = {
+    "value",
+    "+",
+    "-",
+    "*",
+    "/",
+    "(",
+    ")"
+};
+std::vector<TokenType> plusOrMinus = { TokenType::PLUS, TokenType::MINUS };
+std::vector<TokenType> mulOrDiv = { TokenType::MUL, TokenType::DIV };
+
+

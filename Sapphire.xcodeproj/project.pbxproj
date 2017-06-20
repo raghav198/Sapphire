@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D36046071EF849DC0016B6EF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36046061EF849DC0016B6EF /* main.cpp */; };
+		D360460F1EF86CE70016B6EF /* Token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D360460D1EF86CE70016B6EF /* Token.cpp */; };
+		D36046121EF874AE0016B6EF /* TokenStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36046101EF874AE0016B6EF /* TokenStream.cpp */; };
+		D36046151EF8999C0016B6EF /* Lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36046131EF8999C0016B6EF /* Lexer.cpp */; };
+		D36046181EF8A3E30016B6EF /* AST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36046161EF8A3E30016B6EF /* AST.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		D36046031EF849DC0016B6EF /* Sapphire */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sapphire; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36046061EF849DC0016B6EF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D360460D1EF86CE70016B6EF /* Token.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Token.cpp; sourceTree = "<group>"; };
+		D360460E1EF86CE70016B6EF /* Token.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Token.hpp; sourceTree = "<group>"; };
+		D36046101EF874AE0016B6EF /* TokenStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TokenStream.cpp; sourceTree = "<group>"; };
+		D36046111EF874AE0016B6EF /* TokenStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TokenStream.hpp; sourceTree = "<group>"; };
+		D36046131EF8999C0016B6EF /* Lexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lexer.cpp; sourceTree = "<group>"; };
+		D36046141EF8999C0016B6EF /* Lexer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Lexer.hpp; sourceTree = "<group>"; };
+		D36046161EF8A3E30016B6EF /* AST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AST.cpp; sourceTree = "<group>"; };
+		D36046171EF8A3E30016B6EF /* AST.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AST.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				D36046061EF849DC0016B6EF /* main.cpp */,
+				D360460D1EF86CE70016B6EF /* Token.cpp */,
+				D36046101EF874AE0016B6EF /* TokenStream.cpp */,
+				D36046111EF874AE0016B6EF /* TokenStream.hpp */,
+				D360460E1EF86CE70016B6EF /* Token.hpp */,
+				D36046131EF8999C0016B6EF /* Lexer.cpp */,
+				D36046141EF8999C0016B6EF /* Lexer.hpp */,
+				D36046161EF8A3E30016B6EF /* AST.cpp */,
+				D36046171EF8A3E30016B6EF /* AST.hpp */,
 			);
 			path = Sapphire;
 			sourceTree = "<group>";
@@ -120,7 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36046181EF8A3E30016B6EF /* AST.cpp in Sources */,
+				D36046121EF874AE0016B6EF /* TokenStream.cpp in Sources */,
 				D36046071EF849DC0016B6EF /* main.cpp in Sources */,
+				D36046151EF8999C0016B6EF /* Lexer.cpp in Sources */,
+				D360460F1EF86CE70016B6EF /* Token.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,16 +243,20 @@
 		D360460B1EF849DC0016B6EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = M7VD655TYD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		D360460C1EF849DC0016B6EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = M7VD655TYD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
